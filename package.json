@@ -1,0 +1,43 @@
+{
+  "name": "soundgasm-api",
+  "version": "0.0.0",
+  "description": "Unofficial API for soundgasm.net",
+  "homepage": "",
+  "author": {
+    "name": "squareguy",
+    "email": "squareguy@unseen.is",
+    "url": ""
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "unofficial API"
+  ],
+  "devDependencies": {
+    "eslint": "^3.18.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "jest": "^19.0.2",
+    "jest-cli": "^19.0.1",
+    "nsp": "^2.6.3"
+  },
+  "scripts": {
+    "prepublish": "nsp check",
+    "pretest": "eslint .",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "repository": "squareguy/soundgasm-api",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {}
+}
