@@ -12,11 +12,15 @@ $ npm install --save soundgasm-api
 ```js
 const soundgasmApi = require('soundgasm-api');
 
-soundgasmApi('Rainbow');
+let url = 'https://soundgasm.net/u/GateOfIvory/M-Sonnet-No-5';
+soundgasmApi(url, sound => {
+  console.log(sound.downloadURL);
+  // => https://soundgasm.net/sounds/b949ed00caadb8ccac989de9885e37ef681610a9.m4a
+});
 ```
 ## License
 
-Apache-2.0 © [squareguy]()
+Apache-2.0 © squareguy
 
 
 [npm-image]: https://badge.fury.io/js/soundgasm-api.svg
